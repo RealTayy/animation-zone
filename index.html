@@ -40,26 +40,32 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
 	 crossorigin="anonymous">
 	<!-- Page CSS -->
-	<link rel="stylesheet" href="reset.css">
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="./css/reset.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<!-- Slice Revealer CSS -->
+	<link rel="stylesheet" type="text/css" href="./css/sliceRevealer.css">
 </head>
 
 
 <body>
-	<header>
+	<header id="header">
 		<div class="header-bg"></div>
 		<div class="header-inset"></div>
 		<div class="wrapper">
 			<div class="hero">
 				<div class="hero-header">
 					<div class="hero-img-box">
-						<img class="hero-img" src="./images/asset2.png" alt="">
+						<img class="hero-img hoverable" src="./images/asset2.png" alt="">
 					</div>
-					<div class="hero-title f-1">
-						Animation Zone
-					</div>
+					<h1 class="hero-title f-1">
+						<span class="hoverable">
+							Animation Zone
+						</span>
+					</h1>
 					<div class="hero-subtitle f-3">
-						let's make the internet a prettier place.
+						<span class="hoverable">
+							let's make the internet a prettier place.
+						</span>
 					</div>
 				</div>
 			</div>
@@ -67,26 +73,26 @@
 	</header>
 	<main>
 		<div class="wrapper sections">
-			<section class="about">
-				<div class="section-header f-1">Animation Zone</div>
-				<div class="section-text f-3">
+			<section id="about" class="about">
+				<h2 class="section-header f-1">Animation Zone</h2>
+				<p class="section-text f-3">
 					Animation Zone is a collection of libraries that I made to make my life easier.
 					<br><br>
 					I write the code for these libraries then I release them for free for others to use/learn from/contribute to.
-					Feel free to use them too if you want to make your life easier. Let's make the internet a prettier place.</div>
+					Feel free to use them too if you want to make your life easier. Let's make the internet a prettier place.</p>
 			</section>
 			<section class="libraries">
-				<div class="section-header f-1">My Libraries</div>
+				<h2 class="section-header f-1">My Libraries</h2>
 				<div class="library-list">
 					<article id="slice-revealer" class="library">
-						<div class="library-image">							
+						<div class="library-image">
 							<video autoplay controls loop>
 								<source src="./images/library-img/slice-revealer.webm" type="video/webm">
 								Your browser does not support the video tag.
 							</video>
 						</div>
 						<div class="library-content">
-							<div class="library-title f-1">Slice Revealer</div>
+							<h3 class="library-title f-1">Slice Revealer</h3>
 							<div class="library-links f-3">
 								<a href="https://github.com/RealTayy/slice-revealer" class="library-link hoverable" target="_blank">
 									GitHub
@@ -101,19 +107,39 @@
 									Docs
 								</a>
 							</div>
-							<div class="library-description f-3">Slice Revealer is a easy to use dependency free library that allows users
+							<p class="library-description f-3">Slice Revealer is a easy to use dependency free library that allows users
 								to cover and uncover DOM elements with customizable animated slices.
-							</div>
+							</p>
 						</div>
 					</article>
-
+					<article id="slice-revealer" class="library">
+						<div class="library-image">
+							<img src="./images/library-img/mern-bp.jpg" alt="mern-bp image">
+						</div>
+						<div class="library-content">
+							<h3 class="library-title f-1">MERN Boiler Plate</h3>
+							<div class="library-links f-3">
+								<a href="https://github.com/RealTayy/mern-bp" class="library-link hoverable" target="_blank">
+									GitHub
+								</a>
+							</div>
+							<p class="library-description f-3">
+								Boilerplate I created to make MERN stack applications. Bootstrapped with create-react-app. Set up with a
+								RESTful API and deployable on Heroku out of the box. Uses MongoDB, Express, React, Node.js, Mongoose, Bluebird,
+								and Axios.
+							</p>
+						</div>
+					</article>
 				</div>
 			</section>
 			<section class="credit">
-				<div class="section-header f-1">Credit</div>
+				<h2 class="section-header f-1">Credit</h2>
 				<ul class="credit-list f-3">
 					<li>
-						The Mai @ maicoding.me
+						<a href="https://www.maicoding.me">MaiCoding</a> - This is my site. I made this stuff.
+					</li>
+					<li>
+						<a href="https://www.pexels.com">Pexels</a> - For the various images I used throughout demos.
 					</li>
 				</ul>
 			</section>
@@ -165,7 +191,10 @@
 			</div>
 		</div>
 	</footer>
-	<script src="./animation-zone.js"></script>
+	<!-- Slice Reavealer JS -->
+	<script src="./javascript/sliceRevealer.min.js"></script>
+	<!-- Page JS -->
+	<script src="./javascript/animation-zone.js"></script>
 </body>
 
 </html>

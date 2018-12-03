@@ -15,15 +15,19 @@
 
 .hoverable {
   opacity: 1;
-  transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+       -o-transition-duration: 0.4s;
+          transition-duration: 0.4s;
 }
 .hoverable:hover {
   opacity: 0.65;
-  filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.5));
+  -webkit-filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.75));
+          filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.75));
 }
 
 .wrapper {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 100%;
   margin: 0 auto;
   height: inherit;
@@ -41,8 +45,7 @@
   }
 }
 
-html {
-  background-color: #ddd;
+html {  
   color: #444;
 }
 
@@ -54,13 +57,16 @@ header .header-bg {
   position: absolute;
   height: 100%;
   width: 100%;
+  background: -webkit-repeating-linear-gradient(135deg, #666, #666 1px, #555 3px, #666 5px, #666 6px);
+  background: -o-repeating-linear-gradient(135deg, #666, #666 1px, #555 3px, #666 5px, #666 6px);
   background: repeating-linear-gradient(-45deg, #666, #666 1px, #555 3px, #666 5px, #666 6px);
 }
 header .header-inset {
   position: absolute;
   height: 100%;
   width: 100%;
-  box-shadow: inset 0px 0px 25px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: inset 0px 0px 25px rgba(0, 0, 0, 0.75);
+          box-shadow: inset 0px 0px 25px rgba(0, 0, 0, 0.75);
 }
 header .hero {
   position: relative;
@@ -71,13 +77,18 @@ header .hero {
 header .hero .hero-header {
   position: relative;
   height: 100%;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   z-index: 1;
   padding: 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   text-align: center;
-  line-height: 135%;
 }
 @media screen and (min-width : 768px) {
   header .hero .hero-header {
@@ -120,7 +131,8 @@ header .hero .hero-header .hero-subtitle {
 
 main {
   position: relative;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   background-color: #ddd;
 }
 main::before {
@@ -135,7 +147,8 @@ main::after {
 }
 main section {
   position: relative;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   background-color: #ffffff;
   margin-top: 15px;
   margin-bottom: 15px;
@@ -145,62 +158,80 @@ main section .section-header {
   font-size: 32px;
   margin-bottom: 10px;
 }
+main section .section-text {
+  line-height: 135%;
+}
 main section:first-child {
   margin-top: 0px;
 }
 main section:last-child {
   margin-bottom: 0px;
 }
-main section .section-text {
-  line-height: 135%;
-}
-main section .library {
+main section.libraries .library {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 15px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 15px;
 }
-main section .library:last-child {
-  margin-bottom: 0px;
+main section.libraries .library:first-child {
+  padding-top: 0px;
+}
+main section.libraries .library:last-child {
+  padding-bottom: 0px;
+  border-bottom: none;
+}
+@media screen and (max-width : 767px) {
+  main section.libraries .library {
+    padding-bottom: 60px;
+    border-bottom: 2px solid #ccc;
+  }
 }
 @media screen and (min-width : 768px) {
-  main section .library .library-image {
+  main section.libraries .library .library-image {
     width: 40%;
   }
 }
-main section .library .library-image img {
+main section.libraries .library .library-image img {
   width: 100%;
 }
-main section .library .library-image video {
+main section.libraries .library .library-image video {
   width: 100%;
 }
-main section .library .library-content {
-  box-sizing: border-box;
+main section.libraries .library .library-content {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 @media screen and (min-width : 768px) {
-  main section .library .library-content {
+  main section.libraries .library .library-content {
     padding-left: 15px;
     width: 60%;
   }
 }
-main section .library .library-content .library-title {
+main section.libraries .library .library-content .library-title {
   font-size: 24px;
   margin-bottom: 10px;
 }
-main section .library .library-content .library-links .library-link {
+main section.libraries .library .library-content .library-links .library-link {
   display: inline-block;
   color: #b5dff4;
   padding: 5px 10px;
   margin-right: 5px;
   margin-bottom: 10px;
   background-color: #36a9e1;
-  text-decoration-line: none;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
 }
-main section .library .library-content .library-links:after {
+main section.libraries .library .library-content .library-links:after {
   content: "";
   clear: both;
   display: table;
 }
-main section .library .library-content .library-description {
+main section.libraries .library .library-content .library-description {
+  line-height: 135%;
+}
+main section.credit .credit-list {
   line-height: 135%;
 }
 
@@ -238,8 +269,12 @@ footer .footer-footer .footer-mc .mc-logo .mc-img {
 }
 footer .footer-footer .footer-links {
   margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 footer .footer-footer .footer-links .footer-link {
   padding: 0 5px;
@@ -247,5 +282,3 @@ footer .footer-footer .footer-links .footer-link {
 footer .footer-footer .footer-links .footer-link i {
   color: #ffffff;
 }
-
-/*# sourceMappingURL=style.css.map */
