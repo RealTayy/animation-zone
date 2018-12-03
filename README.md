@@ -1,5 +1,6 @@
 # Animation Zone
 [Website](https://realtayy.github.io/animation-zone/)
+
 Animation Zone is a collection of libraries that I made to make my life easier.
 
 I write the code for these libraries then I release them for free for others to use/learn from/contribute to. Feel free to use them too if you want to make your life easier. Let's make the internet a prettier place.
