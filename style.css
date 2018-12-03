@@ -13,6 +13,14 @@
   font-family: "Quattrocento", serif;
 }
 
+.hoverable {
+  opacity: 1;
+  transition-duration: 0.3s;
+}
+.hoverable:hover {
+  opacity: 0.8;
+}
+
 .wrapper {
   box-sizing: border-box;
   width: 100%;
@@ -164,6 +172,7 @@ footer .footer-footer .footer-mc {
   margin-bottom: 15px;
 }
 footer .footer-footer .footer-mc .mc-logo {
+  display: block;
   height: 64px;
   width: 64px;
   margin: 5px auto;
@@ -176,6 +185,14 @@ footer .footer-footer .footer-mc .mc-logo .mc-img {
 }
 footer .footer-footer .footer-links {
   margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+}
+footer .footer-footer .footer-links .footer-link {
+  padding: 0 5px;
+}
+footer .footer-footer .footer-links .footer-link i {
+  color: #ffffff;
 }
 
 /*# sourceMappingURL=style.css.map */

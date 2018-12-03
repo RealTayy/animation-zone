@@ -22,6 +22,14 @@ $large-bp: "screen and (min-width : 992px)";
   font-family: 'Quattrocento', serif;
 }
 
+.hoverable {
+	opacity: 1;
+	transition-duration: .3s;
+	&:hover {
+		opacity: .8;
+	}
+}
+
 .wrapper {
   box-sizing: border-box;
   width: 100%;
@@ -161,6 +169,7 @@ footer {
     .footer-mc {
       margin-bottom: 15px;
       .mc-logo {
+				display: block;
         height: 64px;
         width: 64px;
         margin: 5px auto;
@@ -174,6 +183,14 @@ footer {
     }
     .footer-links {
       margin-bottom: 15px;
+      display: flex;
+      justify-content: center;
+      .footer-link {
+				padding: 0 5px;
+        i {
+          color: $base-white;
+        }
+      }
     }
   }
 }
