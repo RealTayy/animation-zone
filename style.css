@@ -15,10 +15,11 @@
 
 .hoverable {
   opacity: 1;
-  transition-duration: 0.3s;
+  transition-duration: 0.4s;
 }
 .hoverable:hover {
-  opacity: 0.8;
+  opacity: 0.65;
+  filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.5));
 }
 
 .wrapper {
@@ -59,7 +60,7 @@ header .header-inset {
   position: absolute;
   height: 100%;
   width: 100%;
-  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.75);
+  box-shadow: inset 0px 0px 25px rgba(0, 0, 0, 0.75);
 }
 header .hero {
   position: relative;
@@ -76,7 +77,7 @@ header .hero .hero-header {
   display: flex;
   flex-direction: column;
   text-align: center;
-  line-height: 1.5em;
+  line-height: 135%;
 }
 @media screen and (min-width : 768px) {
   header .hero .hero-header {
@@ -150,6 +151,58 @@ main section:first-child {
 main section:last-child {
   margin-bottom: 0px;
 }
+main section .section-text {
+  line-height: 135%;
+}
+main section .library {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+main section .library:last-child {
+  margin-bottom: 0px;
+}
+@media screen and (min-width : 768px) {
+  main section .library .library-image {
+    width: 40%;
+  }
+}
+main section .library .library-image img {
+  width: 100%;
+}
+main section .library .library-image video {
+  width: 100%;
+}
+main section .library .library-content {
+  box-sizing: border-box;
+}
+@media screen and (min-width : 768px) {
+  main section .library .library-content {
+    padding-left: 15px;
+    width: 60%;
+  }
+}
+main section .library .library-content .library-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+main section .library .library-content .library-links .library-link {
+  display: inline-block;
+  color: #b5dff4;
+  padding: 5px 10px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  background-color: #36a9e1;
+  text-decoration-line: none;
+}
+main section .library .library-content .library-links:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+main section .library .library-content .library-description {
+  line-height: 135%;
+}
 
 footer .footer-disclaimer {
   background-color: #36a9e1;
@@ -161,7 +214,7 @@ footer .footer-disclaimer .disclaimer-text {
 }
 footer .footer-disclaimer .disclaimer-small {
   font-size: 14px;
-  line-height: 1.5em;
+  line-height: 135%;
 }
 footer .footer-footer {
   color: #ffffff;
@@ -169,7 +222,7 @@ footer .footer-footer {
   text-align: center;
 }
 footer .footer-footer .footer-mc {
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 footer .footer-footer .footer-mc .mc-logo {
   display: block;
@@ -184,7 +237,7 @@ footer .footer-footer .footer-mc .mc-logo .mc-img {
   top: 25%;
 }
 footer .footer-footer .footer-links {
-  margin-bottom: 15px;
+  margin-bottom: 30px;
   display: flex;
   justify-content: center;
 }
