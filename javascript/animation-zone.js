@@ -10,5 +10,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
 		sliceDuration: 1,
 		color: "#484848",
 	});
-	sr_instance.goPhase('end');
+	sr_instance.goPhase('end', {
+		startCB: () => {
+			document.getElementById('header-cover').style.display = "none";
+		}
+	});
 });

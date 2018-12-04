@@ -15,19 +15,15 @@
 
 .hoverable {
   opacity: 1;
-  -webkit-transition-duration: 0.4s;
-       -o-transition-duration: 0.4s;
-          transition-duration: 0.4s;
+  transition-duration: 0.4s;
 }
 .hoverable:hover {
   opacity: 0.65;
-  -webkit-filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.75));
-          filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.75));
+  filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.75));
 }
 
 .wrapper {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   width: 100%;
   margin: 0 auto;
   height: inherit;
@@ -45,7 +41,7 @@
   }
 }
 
-html {  
+html {
   color: #444;
 }
 
@@ -53,20 +49,24 @@ header {
   position: relative;
   width: 100%;
 }
+header .header-cover {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #484848;
+  z-index: 2;
+}
 header .header-bg {
   position: absolute;
   height: 100%;
   width: 100%;
-  background: -webkit-repeating-linear-gradient(135deg, #666, #666 1px, #555 3px, #666 5px, #666 6px);
-  background: -o-repeating-linear-gradient(135deg, #666, #666 1px, #555 3px, #666 5px, #666 6px);
   background: repeating-linear-gradient(-45deg, #666, #666 1px, #555 3px, #666 5px, #666 6px);
 }
 header .header-inset {
   position: absolute;
   height: 100%;
   width: 100%;
-  -webkit-box-shadow: inset 0px 0px 25px rgba(0, 0, 0, 0.75);
-          box-shadow: inset 0px 0px 25px rgba(0, 0, 0, 0.75);
+  box-shadow: inset 0px 0px 25px rgba(0, 0, 0, 0.75);
 }
 header .hero {
   position: relative;
@@ -77,17 +77,11 @@ header .hero {
 header .hero .hero-header {
   position: relative;
   height: 100%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   z-index: 1;
   padding: 30px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   text-align: center;
 }
 @media screen and (min-width : 768px) {
@@ -131,8 +125,7 @@ header .hero .hero-header .hero-subtitle {
 
 main {
   position: relative;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   background-color: #ddd;
 }
 main::before {
@@ -147,8 +140,7 @@ main::after {
 }
 main section {
   position: relative;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   background-color: #ffffff;
   margin-top: 15px;
   margin-bottom: 15px;
@@ -168,11 +160,8 @@ main section:last-child {
   margin-bottom: 0px;
 }
 main section.libraries .library {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   padding-top: 15px;
 }
 main section.libraries .library:first-child {
@@ -200,8 +189,7 @@ main section.libraries .library .library-image video {
   width: 100%;
 }
 main section.libraries .library .library-content {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 @media screen and (min-width : 768px) {
   main section.libraries .library .library-content {
@@ -220,8 +208,7 @@ main section.libraries .library .library-content .library-links .library-link {
   margin-right: 5px;
   margin-bottom: 10px;
   background-color: #36a9e1;
-  -webkit-text-decoration-line: none;
-          text-decoration-line: none;
+  text-decoration-line: none;
 }
 main section.libraries .library .library-content .library-links:after {
   content: "";
@@ -269,12 +256,8 @@ footer .footer-footer .footer-mc .mc-logo .mc-img {
 }
 footer .footer-footer .footer-links {
   margin-bottom: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 footer .footer-footer .footer-links .footer-link {
   padding: 0 5px;
@@ -282,3 +265,5 @@ footer .footer-footer .footer-links .footer-link {
 footer .footer-footer .footer-links .footer-link i {
   color: #ffffff;
 }
+
+/*# sourceMappingURL=style.css.map */
