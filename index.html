@@ -51,21 +51,21 @@
 <body>
 	<header id="header">
 		<div id="header-cover" class="header-cover"></div>
-		<div class="header-bg"></div>
+		<div id="header-bg" class="header-bg"></div>
 		<div class="header-inset"></div>
 		<div class="wrapper">
 			<div class="hero">
-				<div class="hero-header">
+				<div id="hero-header" class="hero-header">
 					<div class="hero-img-box">
-						<img class="hero-img hoverable" src="./images/asset2.png" alt="">
+						<img id="hero-logo" class="hero-img hoverable shadow" src="./images/asset2.png" alt="">
 					</div>
-					<h1 class="hero-title f-1">
-						<span class="hoverable">
+					<h1 id="hero-title" class="hero-title f-1">
+						<span class="hoverable shadow">
 							Animation Zone
 						</span>
 					</h1>
-					<div class="hero-subtitle f-3">
-						<span class="hoverable">
+					<div id="hero-subtitle" class="hero-subtitle f-3">
+						<span class="hoverable shadow">
 							let's make the internet a prettier place.
 						</span>
 					</div>
@@ -111,6 +111,31 @@
 							</div>
 							<p class="library-description f-3">Slice Revealer is a easy to use dependency free library that allows users
 								to cover and uncover DOM elements with customizable animated slices.
+							</p>
+						</div>
+					</article>
+					<article id="slice-revealer" class="library">
+						<div class="library-image">
+							<img src="https://via.placeholder.com/689x387" alt="mern-bp image">
+						</div>
+						<div class="library-content">
+							<h3 class="library-title f-1">Position Based Transform</h3>
+							<div class="library-links f-3">
+								<a href="https://github.com/RealTayy/position-based-transform" class="library-link hoverable" target="_blank">
+									GitHub
+								</a>
+								<!-- <a class="library-link hoverable" target="_blank" href="https://realtayy.github.io/slice-revealer/demo/demo1/demo1.html">
+									Demo 1
+								</a>
+								<a class="library-link hoverable" target="_blank" href="https://realtayy.github.io/slice-revealer/demo/demo2/demo2.html">
+									Demo 2
+								</a> -->
+								<a class="library-link hoverable" target="_blank" href="https://github.com/RealTayy/position-based-transform#documentation">
+									Docs
+								</a>
+							</div>
+							<p class="library-description f-3">Position Based Transform is a lightweight, 60fps, dependency free library for
+								CSS transform effects based on mouse position.
 							</p>
 						</div>
 					</article>
@@ -195,6 +220,8 @@
 	</footer>
 	<!-- Slice Reavealer JS -->
 	<script src="./javascript/sliceRevealer.min.js"></script>
+	<!-- Position Based Tranform JS -->
+	<script src="./javascript/positionBasedTransform.min.js"></script>
 	<!-- Page JS -->
 	<script src="./javascript/animation-zone.js"></script>
 </body>

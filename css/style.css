@@ -22,6 +22,10 @@
   filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.75));
 }
 
+.shadow {
+  filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.75));
+}
+
 .wrapper {
   box-sizing: border-box;
   width: 100%;
@@ -48,6 +52,7 @@ html {
 header {
   position: relative;
   width: 100%;
+  overflow: hidden;
 }
 header .header-cover {
   position: absolute;

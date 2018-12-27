@@ -31,6 +31,10 @@ $large-bp: "screen and (min-width : 992px)";
   }
 }
 
+.shadow {
+  filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.75));
+}
+
 .wrapper {
   box-sizing: border-box;
   width: 100%;
@@ -47,13 +51,14 @@ $large-bp: "screen and (min-width : 992px)";
   }
 }
 
-html {  
+html {
   color: #444;
 }
 
 header {
   position: relative;
   width: 100%;
+  overflow: hidden;
   .header-cover {
     position: absolute;
     height: 100%;
@@ -86,7 +91,7 @@ header {
       padding: 30px 0;
       display: flex;
       flex-direction: column;
-      text-align: center;      
+      text-align: center;
       @media #{$medium-bp} {
         line-height: 2em;
         padding: 50px 0;
@@ -146,9 +151,9 @@ main {
       font-size: 32px;
       margin-bottom: 10px;
     }
-		.section-text {
-		  line-height: 135%;
-		}
+    .section-text {
+      line-height: 135%;
+    }
     &:first-child {
       margin-top: 0px;
     }
