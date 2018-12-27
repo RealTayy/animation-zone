@@ -33,14 +33,14 @@ document.addEventListener("DOMContentLoaded", function (event) {
 	pBTransform(pbt_logo, {
 		hoverTarget: pbt_header,
 		translateX: 40,
-		tiltX: 30,		
+		tiltX: 30,
 	});
 	pBTransform(pbt_title, {
 		hoverTarget: pbt_header,
 		translateX: 30,
 		rotate: 7,
 		rotateStyle: 2,
-		tiltX: 50,		
+		tiltX: 50,
 		duration: ".8s"
 	});
 	pBTransform(pbt_subtitle, {
@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 		translateX: 20,
 		rotate: 8,
 		rotateStyle: 2,
-		tiltX: 70,		
+		tiltX: 70,
 		duration: "1.4s"
 	});
 });
