@@ -51,4 +51,15 @@ document.addEventListener("DOMContentLoaded", function (event) {
 		tiltX: 70,
 		duration: "1.4s"
 	});
+
+	// Javascript for Position based transform on lirbary-img of pbt
+	const pbt_container = document.getElementById("pbt-container");
+	const pbt_wrapper = document.getElementById("pbt-wrapper");
+	const pbt_box = document.getElementById("pbt-box");
+	const pbt_text = document.getElementById("pbt-text");
+	pBTransform(pbt_container, {
+		hoverTarget: pbt_wrapper,		
+		tilt: 20,		
+	})
+
 });
