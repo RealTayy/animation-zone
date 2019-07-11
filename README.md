@@ -13,6 +13,12 @@ Slice Revealer is a easy to use dependency free library that allows users to cov
 [Demo 2](https://realtayy.github.io/slice-revealer/demo/demo2/demo2.html)
 [Documentation](https://github.com/RealTayy/slice-revealer#documentation)
 
+### Position Based Transform
+Slice Revealer is a easy to use dependency free library that allows users to cover and uncover DOM elements with customizable animated slices.
+[Github](https://github.com/RealTayy/position-based-transform)
+[Demo 1](https://realtayy.github.io/position-based-transform/demo/demo1/demo1.html)
+[Documentation](https://github.com/RealTayy/position-based-transform#documentation)
+
 ## License
 Animation Zone and it's libraries are all open source software under the [MIT license](https://github.com/RealTayy/animation-zone/blob/master/LICENSE)
 
