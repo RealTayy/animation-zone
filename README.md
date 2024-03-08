@@ -23,4 +23,4 @@ Slice Revealer is a easy to use dependency free library that allows users to cov
 Animation Zone and it's libraries are all open source software under the [MIT license](https://github.com/RealTayy/animation-zone/blob/master/LICENSE)
 
 ## Credit/Shameless Plug
-Interested in who made this? Come visit my portfolio at [MaiCoding](https://www.maiCoding.me)
+Interested in who made this? Come visit my portfolio at [MaiCoding](https://www.maiCoding.me).
